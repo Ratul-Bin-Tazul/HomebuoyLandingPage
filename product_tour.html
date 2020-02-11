@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style type="text/css">
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .intro {
+            background: url('home_main.png');
+        }
+
+        .intro-tab {
+            float: right;
+        }
+
+        .nav-item a {
+            color: #F1592B;
+        }
+
+        .intro-heading {
+            color: #F1592B;
+
+        }
+
+        #getNews {}
+
+        .transparent-style {
+
+            background-color: #ffffff;
+            opacity: .4;
+
+        }
+
+        ::-webkit-input-placeholder {
+            /* Edge */
+            color: white;
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: white;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        .getInTouch {
+            border: none;
+            border-bottom: 1px solid #575757;
+            background-color: rgba(0, 0, 0, 0);
+            color: 575757;
+            outline: none;
+            width: 70%;
+            width: 70%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .getInTouch::placeholder {
+            color: #575757;
+        }
+
+        .getInTouch::-webkit-input-placeholder {
+            /* Edge */
+            color: #575757;
+        }
+
+        .getInTouch:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #575757;
+        }
+
+        .footer-link {
+            color: #FFFFFF;
+            font-size: 16pt;
+            outline: none;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: #FFFFFF;
+            font-size: 16pt;
+            outline: none;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid" style="margin: 0px;padding: 0px;">
+
+        <!-- Just an image -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" height="30" style="margin-left: 80%;" alt="">
+            </a>
+
+            <ul class="nav justify-content-end" style="padding: 10px;margin-right: 150px;">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tour">Product Tour</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about">About Us</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a href="">
+                        <img src="./img/get_started_orange.png" width="120" height="45px" style="position: absolute;" />
+                    </a>
+                    <!-- <a class="nav-link" href="#" style="color: white;position: absolute;"></a> -->
+                </li>
+            </ul>
+
+        </nav>
+
+        <img src="./img/product_tour/header_bg.png" style="position: absolute;margin-top: -8%;" width="100%" />
+
+
+        <div class="row mx-auto" style="position: relative;margin: 0px;margin-top: 8%;">
+
+            <div class="col-6 my-auto">
+                <h1 class="intro-heading mx-auto align-self-center my-auto"
+                    style="width: 55%;font-size: 32pt; margin-bottom: 5%;">
+
+                    HomeBuoy Tablet
+                </h1>
+
+                <p class="mx-auto align-self-center" style="width: 55%;margin-top: 4%;">
+                    Earn more from every booking by streamlining your
+                    guest communication, whilst transacting directly with
+                    your guest during their stay. Offer and sell your own
+                    services and earn a money from guest accessing our
+                    on-demand partner network.
+                </p>
+
+                <div class=" mx-auto align-self-center" style="margin-top: 5%;width: 55%;">
+                    <!-- <button type="button" class="btn btn-dark"
+                  style="width: 150px;min-width: 150px;background: #F1592B;border-radius: 100px;border-color: #F1592B;margin-right: 40px;">Product Tour</button> -->
+                    <button type="button" class="btn btn-outline-light"
+                        style="width: 150px;min-width: 150px;border-style: solid;border-width: 1px;border-radius: 100px;border-color: #F1592B;color: #F1592B;">Sign
+                        up for free</button>
+                </div>
+
+            </div>
+
+            <div class="col d-flex justify-content-center my-auto">
+                <img src="./img/product_tour/heading_tab.png" width="80%" />
+            </div>
+
+        </div>
+
+
+
+        <img src="./img/product_tour/heading1.png" style="position: absolute;margin-top: 15%;" id="intro-tab"
+            width="100%" />
+
+        <div class="row mx-auto" style="position: relative;margin: 0px; ;margin-top: 35%;">
+
+            <div class="col d-flex justify-content-center">
+
+
+                <div class="card bg-transparent rounded"
+                    style="width: 80%;padding: 0%;border: 3px solid #F1592B;overflow: hidden;">
+
+                    <iframe id="youtube_player" style="" width="100%" height="600px"
+                        src="https://www.youtube.com/embed/aBlKPLeLU_s" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+        </div>
+
+        <img src="./img/product_tour/body_bg1.png"
+            style="position: absolute;margin-top: 10%;margin-left: 10%;margin-right: 10%;" width="80%" />
+
+        <div class="row mx-auto" style="position: relative;margin: 0px;margin-top: 15%;">
+
+            <div class="col-6 my-auto">
+                <h1 class="intro-heading mx-auto align-self-center my-auto" style="width: 55%;">
+
+                    Topic Title
+                </h1>
+
+                <p class="mx-auto align-self-center my-auto" style="width: 55%;">
+                    Sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex.Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud Sed do
+                    eiusmod.
+                </p>
+
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <img src="./img/product_tour/dummy.png" width="80%" />
+            </div>
+
+        </div>
+
+        <div class="row mx-auto" style="position: relative;margin: 0px;margin-top: 10%;">
+
+            <div class="col d-flex justify-content-center">
+                <img src="./img/product_tour/dummy.png" width="80%" />
+            </div>
+
+            <div class="col-6 my-auto">
+                <h1 class="intro-heading mx-auto align-self-center my-auto" style="width: 55%;">
+
+                    Topic Title
+                </h1>
+
+                <p class="mx-auto align-self-center my-auto" style="width: 55%;">
+                    Sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex.Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud Sed do
+                    eiusmod.
+                </p>
+
+            </div>
+
+        </div>
+
+        <img src="./img/product_tour/body_bg2.png"
+            style="position: absolute;margin-top: 10%;margin-left: 10%;margin-right: 10%;" width="80%" />
+
+        <div class="row mx-auto" style="position: relative;margin: 0px;margin-top: 15%;">
+
+            <div class="col-6 my-auto">
+                <h1 class="intro-heading mx-auto align-self-center my-auto" style="width: 55%;">
+
+                    Topic Title
+                </h1>
+
+                <p class="mx-auto align-self-center my-auto" style="width: 55%;">
+                    Sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex.Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud Sed do
+                    eiusmod.
+                </p>
+
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <img src="./img/product_tour/dummy.png" width="80%" />
+            </div>
+
+        </div>
+
+        <div class="row mx-auto" style="position: relative;margin: 0px;margin-top: 10%;">
+
+            <div class="col d-flex justify-content-center">
+                <img src="./img/product_tour/dummy.png" width="80%" />
+            </div>
+
+            <div class="col-6 my-auto">
+                <h1 class="intro-heading mx-auto align-self-center my-auto" style="width: 55%;">
+
+                    Topic Title
+                </h1>
+
+                <p class="mx-auto align-self-center my-auto" style="width: 55%;">
+                    Sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex.Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud Sed do
+                    eiusmod.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="row mx-auto" style="position: relative;margin: 0px;margin-top: 15%;">
+
+            <div class="col-6 my-auto">
+                <h1 class="intro-heading mx-auto align-self-center my-auto" style="width: 55%;">
+
+                    Topic Title
+                </h1>
+
+                <p class="mx-auto align-self-center my-auto" style="width: 55%;">
+                    Sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex.Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud Sed do
+                    eiusmod.
+                </p>
+
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <img src="./img/product_tour/dummy.png" width="80%" />
+            </div>
+
+        </div>
+
+        <img src="./img/home_fourth.png" style="position: absolute;margin-top: 250px;" id="intro-tab" width="100%" />
+
+        <div class="row mx-auto" style="position: relative;margin: 0px; ;margin-top: 200px;">
+
+            <div class="col d-flex justify-content-center" style="margin: 0%;">
+
+                <input class="" id="getNews" type="text" name="fname" placeholder="Enter your email" style="margin-top: 22%;border: 1px solid white;border-radius: 30px;   background-color:rgba(0, 0, 0, 0);
+          color:white;
+          outline:none;
+          width: 40%;
+          padding-top: 12px;padding-bottom: 12px;padding-left: 40px;padding-right: 10px;">
+                </input>
+
+                <button style="width: 10%;position: absolute;margin-top: 21.5%;background: #ffffff;border: 1px solid white;border-radius: 30px;color: #F1592B;
+padding-top: 12px;padding-bottom: 12px;padding-left: 10px;padding-right: 10px;right: 30%;outline:none;"
+                    type="button">Subscribe</button>
+
+                <!-- <form action="/action_page.php" style="margin: 50px;">
+          First name: <input type="text" name="fname"><br>
+          Last name: <input type="text" name="lname"><br>
+          <input type="submit" value="Submit">
+        </form> -->
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <img src="./img/home_fifth.png" style="position: absolute;margin-top: 50px;" id="intro-tab" width="100%" />
+
+    <div class="row mx-auto" style="position: relative;margin-top: 10px;">
+
+        <div class="col-6" style="margin: 0%;">
+
+            <img src="./img/get_in_touch_text.png" width="70%"
+                style="margin-top: 250px;margin-left: 140px;position: relative;" />
+
+            <form action="/action_page.php" style="margin-top: 50px;margin-left: 140px;">
+                <input class="getInTouch" type="text" name="fname" placeholder="Name"><br>
+
+                <input class="getInTouch" type="text" name="fname" placeholder="Email"><br>
+
+                <textarea class="getInTouch" type="text" style="height: 100px;" name="fname"
+                    placeholder="Query"></textarea><br>
+
+                <a href="">
+                    <img src="./img/submit_button_orange.png" width="150px" height="50px" style="margin-top: 50px;" />
+                </a>
+            </form>
+
+        </div>
+
+    </div>
+
+    <img src="./img/footer_bg.png" style="position: absolute;margin-top: 350px;margin-left: -10%;margin-bottom: -300px;"
+        id="intro-tab" width="110%" />
+
+    <div class="row mx-auto" style="position: relative;margin-top: 550px;bottom: 10;">
+
+        <div class="col d-flex  justify-content-center">
+
+            <a href="">
+                <img src="./img/facebook.png" width="100px" height="100px" style="margin-top: 50px;" />
+            </a>
+
+            <a href="">
+                <img src="./img/twitter.png" width="100px" height="100px"
+                    style="margin-top: 50px;margin-left: 60px;margin-right: 30px;" />
+            </a>
+
+            <a href="">
+                <img src="./img/youtube.png" width="100px" height="100px"
+                    style="margin-top: 50px;margin-left: 30px;margin-right: 60px;" />
+            </a>
+
+            <a href="">
+                <img src="./img/google.png" width="100px" height="100px" style="margin-top: 50px;" />
+            </a>
+        </div>
+
+        <div class="d-flex  justify-content-center" style="width: 100%;margin-top: 7%;">
+            <a href="" class="footer-link">Get Started</a>
+            <a href="" class="footer-link" style="margin-left: 80px;margin-right: 40px;">Prouct Tour</a>
+            <a href="" class="footer-link" style="margin-left: 40px;margin-right: 40px;">Partners</a>
+            <a href="" class="footer-link" style="margin-left: 40px;margin-right: 80px;">Terms & Condition</a>
+            <a href="" class="footer-link">Privacy Policy</a>
+        </div>
+
+        <div class="d-flex  justify-content-center" style="width: 100%;">
+            <img src="./img/footer_copyright_text.png" class="mx-auto" style="margin-top: 7%;margin-left: 15%;"
+                id="intro-tab" width="80%" />
+        </div>
+
+
+    </div>
+
+
+
+    </div>
+    <!-- </div> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./img/https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="./img/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="./img/https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

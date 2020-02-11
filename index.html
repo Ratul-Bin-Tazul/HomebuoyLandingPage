@@ -17,6 +17,7 @@
     body {
       max-width: 100%;
       overflow-x: hidden;
+      scroll-behavior: smooth;
     }
 
     .intro {
@@ -100,6 +101,9 @@
       outline: none;
       text-decoration: none;
     }
+    nav ul li a:hover{
+      text-decoration: underline overline;
+    }
   </style>
 </head>
 
@@ -109,26 +113,29 @@
 
     <!-- Just an image -->
     <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="./img/logo.png" height="30" style="margin-left: 80%;" alt="">
       </a>
 
       <ul class="nav justify-content-end" style="padding: 10px;margin-right: 150px;">
         <li class="nav-item">
-          <a class="nav-link active" href="home">Home</a>
+          <a class="nav-link active" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tour">Product Tour</a>
+          <a class="nav-link" href="product_tour.html">Product Tour</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pricing">Pricing</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about">About Us</a>
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
         </li>
         <li class="nav-item mx-auto">
           <a href="">
-            <img src="./img/get_started_orange.png" width="140" height="50px" style="position: absolute;" />
+            <img src="./img/get_started_orange.png" width="120" height="45px" style="position: absolute;" />
           </a>
           <!-- <a class="nav-link" href="#" style="color: white;position: absolute;"></a> -->
         </li>
@@ -163,7 +170,7 @@
         <div class="d-flex"
           style="margin-top: 3.5%;margin-left: 20%;width: 60%;">
           <button type="button" class="btn btn-dark"
-            style="width: 150px;min-width: 150px;background: #F1592B;border-radius: 100px;border-color: #F1592B;margin-right: 40px;">Product Tour</button>
+            style="width: 150px;min-width: 150px;background: #F1592B;border-radius: 100px;border-color: #F1592B;margin-right: 20px;padding-top: 10px;padding-bottom: 10px;">Product Tour</button>
           <button type="button" class="btn btn-outline-light"
             style="width: 150px;min-width: 150px;border-style: solid;border-width: 1px;border-radius: 100px;border-color: #F1592B;color: #F1592B;">Get
             Started</button>
@@ -176,7 +183,7 @@
     <img src="./img/home_second.png" style="position: absolute;" id="intro-tab" width="80%" />
 
 
-    <div class="row mx-auto" style="position: relative;">
+    <div id="about" class="row mx-auto" style="position: relative;">
       <h2 class="mx-auto text-center" style="font-size: 30pt;">ABOUT THE APP</h2>
     </div>
 
@@ -245,7 +252,7 @@
 
     <img src="./img/home_third.png" style="position: absolute;" id="intro-tab" width="100%" />
 
-    <div class="row mx-auto" style="position: relative;margin: 0px; ;margin-top: 10px;">
+    <div id="pricing" class="row mx-auto" style="position: relative;margin: 0px; ;margin-top: 10px;">
 
       <div class="col-6 mx-auto" style="margin: 0%;">
 
